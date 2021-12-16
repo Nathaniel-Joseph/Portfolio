@@ -1,0 +1,441 @@
+$bg-color-dark: #161b22;
+$bg-primary: #1f6feb;
+$bg-gray-dark: #21262d;
+$bg-secondary: #6e768166;
+$bg-warning: #e34c26;
+$bg-indigo: #563d7c;
+$bg-yellow: #ffc107;
+
+// text-colors
+$color-primary: #58a6ff;
+$color-secondary: #484f58;
+$color-gray: #8b949e;
+$color-light: #c9d1d9;
+$color-light2: #f0f6fcb3;
+$color-white: #f0f6fc;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap');
+
+body {
+    background: $bg-color-dark;
+    overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+    height: 100vh;
+
+    @media (max-width: 425px) {
+        width: 100% !important;
+        overflow-x: hidden;
+    }
+}
+
+// nav {
+//     background: $bg-gray-dark !important;
+//     border-bottom: 1px solid $color-gray !important;
+
+//     .navbar-brand {
+//         font-size: .95rem !important;
+//         color: $color-light !important;
+//     }
+
+//     .nav-link {
+//         font-size: .85rem;
+//         font-weight: 400;
+//         color: $color-light2 !important;
+//     }
+
+//     @media (max-width: 425px) {
+//         .navbar-nav.last_nav_link {
+//             display: none;
+//         }
+
+//         .nav-item {
+//             // border-top: thin solid $color-secondary;
+//             border-bottom: thin solid $color-secondary;
+//         }
+//     }
+// }
+
+main {
+    .row {
+        .col-md-4 {
+            .profile_img {
+                .profile_img_image {
+                    border: 2px solid $color-secondary !important;
+                }
+
+                @media (max-width: 425px) {
+                    text-align: center;
+                }
+            }
+
+            .status {
+                border: 1px solid $color-secondary;
+                position: absolute;
+                height: 35px;
+                width: 35px;
+                display: flex;
+                right: 0%;
+                cursor: pointer;
+                bottom: 20%;
+                background: $bg-color-dark;
+                justify-content: center;
+                align-items: center;
+                
+                @media (max-width: 425px) {
+                    right: 2%;
+                }
+            }
+
+            .profile_bio {
+                font-size: .95rem;
+            }
+
+            .follow_btn {
+                width: 100%;
+                border: 1px solid $color-secondary !important;
+                background: $bg-gray-dark;
+                font-size: .83rem;
+                font-weight: 600;
+                color: $color-light;
+                border-radius: 7px;
+                transition: .4s ease;
+
+                &:hover {
+                    border: 1px solid $color-gray !important;
+                    background: $bg-secondary;
+                }
+            }
+
+            .follower_link {
+                font-size: .82rem;
+                transition: .4s ease;
+
+                svg {
+                    fill: $color-gray;
+                }
+
+                &:hover {
+                    color: $color-primary !important;
+
+                    svg {
+                        fill: $color-primary !important;
+                    }
+                }
+            }
+
+
+            .following_link {
+                font-size: .82rem;
+                transition: .4s ease;
+
+                svg {
+                    fill: $color-gray;
+                }
+
+                &:hover {
+                    color: $color-primary !important;
+
+                    svg {
+                        fill: $color-primary !important;
+                    }
+                }
+            }
+
+            .address {
+                color: $color-light;
+                font-size: .82rem;
+
+                svg {
+                    fill: $color-light;
+                }
+            }
+
+            .e_mail {
+                .mail_link {
+                    font-size: .82rem;
+                    color: $color-light;
+
+                    svg {
+                        fill: $color-light;
+                    }
+
+                    &:hover {
+                        color: $color-primary;
+                        text-decoration: underline !important;
+                    }
+                }
+            }
+
+            .github_link {
+                .git_link {
+                    font-size: .82rem;
+                    color: $color-light;
+
+                    svg {
+                        fill: $color-light;
+                    }
+
+                    &:hover {
+                        color: $color-primary;
+                        text-decoration: underline !important;
+                    }
+                }
+            }
+        }
+
+        .col-md-8 {
+
+            @media (max-width: 425px) {
+                margin-top: 50px;
+
+                .sm_mt {
+                    margin-top: 1rem;
+                }
+            }
+            .nav_tab {
+                // border-bottom: 1px solid $color-secondary !important;
+
+                @media (max-width: 425px) {
+                    // display: ;
+                    overflow-x: auto;
+                    // width: 400px;
+                    text-align: center;
+                }
+
+                .nav_tab_link.btn {
+                    padding: 10px 10px;
+                    color: $color-light;
+                    font-size: .85rem;
+                    font-weight: 400;
+                    text-decoration: none;
+                    border-radius: 0%;
+                    
+                    svg {
+                        fill: $color-secondary;
+                    }
+
+                    &.active {
+                        border-bottom: 1px solid $bg-warning !important;
+
+                        svg {
+                            fill: $color-light;
+                        }
+                    }
+
+                    &:hover {
+                        border-bottom: 1px solid $color-secondary;
+                    }
+
+                    .repo_no {
+                        background: $color-secondary;
+                        padding: 1px 4px;
+                        text-align: center;
+                        border-radius: 50%;
+                        font-size: .82rem;
+                    }
+                }
+            }
+
+            .config_intro {
+                border: thin solid $color-secondary;
+                border-radius: 6px;
+
+                .name_link {
+                    color: $color-light;
+                    font-size: .80rem;
+
+                    .name_link_link {
+                        color: $color-light;
+                        font-family: monospace;
+
+                        &:hover {
+                            color: $color-primary;
+                        }
+                    }
+                }
+
+                .intro_msg {
+                    color: $color-light;
+                    font-size: .80rem;
+
+                    .intro_link_name {
+                        color: $color-primary;
+                    }
+
+                    .intro_badge {
+                        background: $color-secondary;
+                        padding: 1px 3px;
+                        border-radius: 2px;
+                        font-size: .80rem;
+                    }
+                }
+            }
+
+            .popular_repos {
+                .repo_holder {
+                    border: thin solid $color-secondary;
+                    border-radius: 6px;
+
+                    .repo_header {
+                        a {
+                            font-size: .85rem;
+                            color: $color-primary;
+                        }
+
+                        .tag_badge {
+                            padding: 4px 10px;
+                            color: $color-light;
+                            font-size: .74rem;
+                            border-radius: 50px;
+                            border: thin solid $color-secondary;
+                        }
+                    }
+
+                    small {
+                        font-size: .75rem;
+                    }
+
+                    .hidden {
+                        opacity: 0;
+                        font-size: .82rem;
+                    }
+
+                    .lang {
+                        color: $color-light;
+                        font-size: .82rem;
+
+                        .lang_ball {
+                            // padding: 0px 4px;
+                            width: 10px !important;
+                            height: 10px !important;
+                            border-radius: 50px;
+                            top: 5px;
+                            position: absolute !important;
+                            background: $bg-warning;
+                        }
+
+                        .lang_ball.css {
+                            background: $bg-primary;
+                        }
+
+                        .lang_ball.js {
+                            background: $bg-yellow;
+                        }
+
+                        .lang_ball.bs {
+                            background: $bg-indigo;
+                        }
+                    }
+                }
+            }
+
+            .contribution_activity {
+                .btn-primary {
+                    padding: 3px 15px !important;
+                }
+
+                .repo_date {
+                    color: $color-light;
+                    position: relative;
+                    span {
+                        color: $color-gray;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 400px;
+                        height: 1px;
+                        background: $color-gray;
+                        top: 10px;
+                        margin-left: 20px;
+                    }
+                }
+
+                .repo_content {
+                    width: 400px;
+                    border-left: thin solid $color-gray;
+
+                    .repo_name {
+                        .repo_ico {
+                            background: $color-secondary;
+                            position: absolute;
+                            padding: 5px 5px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            left: -8%;
+                            border-radius: 50%;
+
+                            svg {
+                                fill: $color-light;
+                            }
+                        }
+
+                        .repo_obj {
+                            color: $color-light;
+                            font-size: .90rem;
+                        }
+                    }
+
+                    .main_repo {
+                        .main_repo_link {
+                            font-size: .85rem;
+                            color: $color-primary;
+                        }
+
+                        svg {
+                            fill: $color-light;
+                        }
+                    }
+                }
+            }
+
+            .btn-outline-project {
+                width: 100%;
+                border: thin solid $color-secondary;
+                color: $color-primary;
+                font-size: .84rem;
+                font-weight: 500;
+                transition: .4s ease;
+
+                &:hover {
+                    background: $bg-secondary;
+                    border-color: $color-gray;
+                }
+            }
+
+            .small_text {
+                font-size: .84rem;
+                color: $color-light;
+                // letter-spacing: 1.23px;
+
+                .hire_link {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    border-top: thin solid $color-secondary;
+
+    .small_text {
+        font-size: .84rem;
+        color: $color-light;
+
+        a {
+            color: $color-light;
+        }
+    }
+
+    .text-link {
+        color: $color-primary;
+        font-size: .84rem;
+    }
+}

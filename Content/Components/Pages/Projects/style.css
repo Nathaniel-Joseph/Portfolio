@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap");
+body {
+  background: #161b22;
+  overflow-x: hidden;
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media (max-width: 425px) {
+  body {
+    width: 100% !important;
+    overflow-x: hidden;
+  }
+}
+
+main .row .col-md-4 .profile_img .profile_img_image {
+  border: 2px solid #484f58 !important;
+}
+
+@media (max-width: 425px) {
+  main .row .col-md-4 .profile_img {
+    text-align: center;
+  }
+}
+
+main .row .col-md-4 .status {
+  border: 1px solid #484f58;
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0%;
+  cursor: pointer;
+  bottom: 20%;
+  background: #161b22;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 425px) {
+  main .row .col-md-4 .status {
+    right: 2%;
+  }
+}
+
+main .row .col-md-4 .profile_bio {
+  font-size: .95rem;
+}
+
+main .row .col-md-4 .follow_btn {
+  width: 100%;
+  border: 1px solid #484f58 !important;
+  background: #21262d;
+  font-size: .83rem;
+  font-weight: 600;
+  color: #c9d1d9;
+  border-radius: 7px;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+main .row .col-md-4 .follow_btn:hover {
+  border: 1px solid #8b949e !important;
+  background: #6e768166;
+}
+
+main .row .col-md-4 .follower_link {
+  font-size: .82rem;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+main .row .col-md-4 .follower_link svg {
+  fill: #8b949e;
+}
+
+main .row .col-md-4 .follower_link:hover {
+  color: #58a6ff !important;
+}
+
+main .row .col-md-4 .follower_link:hover svg {
+  fill: #58a6ff !important;
+}
+
+main .row .col-md-4 .following_link {
+  font-size: .82rem;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+main .row .col-md-4 .following_link svg {
+  fill: #8b949e;
+}
+
+main .row .col-md-4 .following_link:hover {
+  color: #58a6ff !important;
+}
+
+main .row .col-md-4 .following_link:hover svg {
+  fill: #58a6ff !important;
+}
+
+main .row .col-md-4 .address {
+  color: #c9d1d9;
+  font-size: .82rem;
+}
+
+main .row .col-md-4 .address svg {
+  fill: #c9d1d9;
+}
+
+main .row .col-md-4 .e_mail .mail_link {
+  font-size: .82rem;
+  color: #c9d1d9;
+}
+
+main .row .col-md-4 .e_mail .mail_link svg {
+  fill: #c9d1d9;
+}
+
+main .row .col-md-4 .e_mail .mail_link:hover {
+  color: #58a6ff;
+  text-decoration: underline !important;
+}
+
+main .row .col-md-4 .github_link .git_link {
+  font-size: .82rem;
+  color: #c9d1d9;
+}
+
+main .row .col-md-4 .github_link .git_link svg {
+  fill: #c9d1d9;
+}
+
+main .row .col-md-4 .github_link .git_link:hover {
+  color: #58a6ff;
+  text-decoration: underline !important;
+}
+
+@media (max-width: 425px) {
+  main .row .col-md-8 {
+    margin-top: 50px;
+  }
+  main .row .col-md-8 .sm_mt {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  main .row .col-md-8 .nav_tab {
+    overflow-x: auto;
+    text-align: center;
+  }
+}
+
+main .row .col-md-8 .nav_tab .nav_tab_link.btn {
+  padding: 10px 10px;
+  color: #c9d1d9;
+  font-size: .85rem;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 0%;
+}
+
+main .row .col-md-8 .nav_tab .nav_tab_link.btn svg {
+  fill: #484f58;
+}
+
+main .row .col-md-8 .nav_tab .nav_tab_link.btn.active {
+  border-bottom: 1px solid #e34c26 !important;
+}
+
+main .row .col-md-8 .nav_tab .nav_tab_link.btn.active svg {
+  fill: #c9d1d9;
+}
+
+main .row .col-md-8 .nav_tab .nav_tab_link.btn:hover {
+  border-bottom: 1px solid #484f58;
+}
+
+main .row .col-md-8 .nav_tab .nav_tab_link.btn .repo_no {
+  background: #484f58;
+  padding: 1px 4px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: .82rem;
+}
+
+main .row .col-md-8 .config_intro {
+  border: thin solid #484f58;
+  border-radius: 6px;
+}
+
+main .row .col-md-8 .config_intro .name_link {
+  color: #c9d1d9;
+  font-size: .80rem;
+}
+
+main .row .col-md-8 .config_intro .name_link .name_link_link {
+  color: #c9d1d9;
+  font-family: monospace;
+}
+
+main .row .col-md-8 .config_intro .name_link .name_link_link:hover {
+  color: #58a6ff;
+}
+
+main .row .col-md-8 .config_intro .intro_msg {
+  color: #c9d1d9;
+  font-size: .80rem;
+}
+
+main .row .col-md-8 .config_intro .intro_msg .intro_link_name {
+  color: #58a6ff;
+}
+
+main .row .col-md-8 .config_intro .intro_msg .intro_badge {
+  background: #484f58;
+  padding: 1px 3px;
+  border-radius: 2px;
+  font-size: .80rem;
+}
+
+main .row .col-md-8 .popular_repos .repo_holder {
+  border: thin solid #484f58;
+  border-radius: 6px;
+}
+
+main .row .col-md-8 .popular_repos .repo_holder .repo_header a {
+  font-size: .85rem;
+  color: #58a6ff;
+}
+
+main .row .col-md-8 .popular_repos .repo_holder .repo_header .tag_badge {
+  padding: 4px 10px;
+  color: #c9d1d9;
+  font-size: .74rem;
+  border-radius: 50px;
+  border: thin solid #484f58;
+}
+
+main .row .col-md-8 .popular_repos .repo_holder small {
+  font-size: .75rem;
+}
+
+main .row .col-md-8 .popular_repos .repo_holder .hidden {
+  opacity: 0;
+  font-size: .82rem;
+}
+
+main .row .col-md-8 .popular_repos .repo_holder .lang {
+  color: #c9d1d9;
+  font-size: .82rem;
+}
+
+main .row .col-md-8 .popular_repos .repo_holder .lang .lang_ball {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50px;
+  top: 5px;
+  position: absolute !important;
+  background: #e34c26;
+}
+
+main .row .col-md-8 .popular_repos .repo_holder .lang .lang_ball.css {
+  background: #1f6feb;
+}
+
+main .row .col-md-8 .popular_repos .repo_holder .lang .lang_ball.js {
+  background: #ffc107;
+}
+
+main .row .col-md-8 .popular_repos .repo_holder .lang .lang_ball.bs {
+  background: #563d7c;
+}
+
+main .row .col-md-8 .contribution_activity .btn-primary {
+  padding: 3px 15px !important;
+}
+
+main .row .col-md-8 .contribution_activity .repo_date {
+  color: #c9d1d9;
+  position: relative;
+}
+
+main .row .col-md-8 .contribution_activity .repo_date span {
+  color: #8b949e;
+}
+
+main .row .col-md-8 .contribution_activity .repo_date::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 1px;
+  background: #8b949e;
+  top: 10px;
+  margin-left: 20px;
+}
+
+main .row .col-md-8 .contribution_activity .repo_content {
+  width: 400px;
+  border-left: thin solid #8b949e;
+}
+
+main .row .col-md-8 .contribution_activity .repo_content .repo_name .repo_ico {
+  background: #484f58;
+  position: absolute;
+  padding: 5px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: -8%;
+  border-radius: 50%;
+}
+
+main .row .col-md-8 .contribution_activity .repo_content .repo_name .repo_ico svg {
+  fill: #c9d1d9;
+}
+
+main .row .col-md-8 .contribution_activity .repo_content .repo_name .repo_obj {
+  color: #c9d1d9;
+  font-size: .90rem;
+}
+
+main .row .col-md-8 .contribution_activity .repo_content .main_repo .main_repo_link {
+  font-size: .85rem;
+  color: #58a6ff;
+}
+
+main .row .col-md-8 .contribution_activity .repo_content .main_repo svg {
+  fill: #c9d1d9;
+}
+
+main .row .col-md-8 .btn-outline-project {
+  width: 100%;
+  border: thin solid #484f58;
+  color: #58a6ff;
+  font-size: .84rem;
+  font-weight: 500;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+main .row .col-md-8 .btn-outline-project:hover {
+  background: #6e768166;
+  border-color: #8b949e;
+}
+
+main .row .col-md-8 .small_text {
+  font-size: .84rem;
+  color: #c9d1d9;
+}
+
+main .row .col-md-8 .small_text .hire_link {
+  color: #58a6ff;
+}
+
+footer {
+  border-top: thin solid #484f58;
+}
+
+footer .small_text {
+  font-size: .84rem;
+  color: #c9d1d9;
+}
+
+footer .small_text a {
+  color: #c9d1d9;
+}
+
+footer .text-link {
+  color: #58a6ff;
+  font-size: .84rem;
+}
+/*# sourceMappingURL=style.css.map */
